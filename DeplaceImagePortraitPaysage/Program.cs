@@ -16,6 +16,9 @@ namespace TailleImages
             string cheminImageNouvelle = "";
             int nbDeplaces = 0;
 
+            Directory.CreateDirectory(cheminPaysage);
+            Directory.CreateDirectory(cheminPortrait);
+
             try
             {
                 var jpgFiles = Directory.EnumerateFiles(cheminImage, "*.jp*");

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailleImages", "TailleImages\TailleImages.csproj", "{D1704704-F985-479B-9F2D-5F1CAEF5EE8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeplaceImagesPortraitPaysage", "DeplaceImagePortraitPaysage\DeplaceImagesPortraitPaysage.csproj", "{D1704704-F985-479B-9F2D-5F1CAEF5EE8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D4A89AF3-B666-437B-B1C1-7A48A06ABE39}
+		SolutionGuid = {558174E8-5E9B-409F-961E-11BB54B6B4AE}
 	EndGlobalSection
 EndGlobal

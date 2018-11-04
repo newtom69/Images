@@ -14,8 +14,8 @@ namespace TailleImages
             string cheminPortrait = @".\portrait\";
             string nomImage;
             string cheminImageNouvelle = "";
-
             int nbDeplaces = 0;
+
             try
             {
                 var jpgFiles = Directory.EnumerateFiles(cheminImage, "*.jp*");
@@ -39,7 +39,6 @@ namespace TailleImages
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-
             }
             Console.WriteLine("\nImages déplacées : "+ nbDeplaces);
             Console.ReadLine();

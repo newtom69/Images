@@ -34,9 +34,18 @@ namespace TailleImages
                         cheminImageNouvelle = cheminPortrait;
                     lImage.Dispose();
 
-                    Directory.Move(file, Path.Combine(cheminImageNouvelle, nomImage));
-                    nbDeplaces++;
-                    Console.WriteLine(nomImage + " : traité");
+                    try
+                    {
+                        Directory.Move(file, Path.Combine(cheminImageNouvelle, nomImage));
+                        nbDeplaces++;
+                        Console.WriteLine(nomImage + " : traité");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.Write(nomImage + " " + e.Message);
+                    }
+                
+                    
                 }
             }
             catch (Exception e)

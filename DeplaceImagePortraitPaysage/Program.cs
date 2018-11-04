@@ -12,7 +12,6 @@ namespace TailleImages
             string cheminEntierImage = "";
             string cheminPaysage = @".\paysage\";
             string cheminPortrait = @".\portrait\";
-
             string nomImage;
             string cheminImageNouvelle = "";
 
@@ -25,7 +24,6 @@ namespace TailleImages
                     cheminEntierImage = file;
                     nomImage = file.Substring(cheminImage.Length);
 
-                    //Bitmap lImage = new Bitmap(cheminEntierImage);
                     Image lImage = Image.FromFile(cheminEntierImage);
                     if (lImage.Height < lImage.Width)
                         cheminImageNouvelle = cheminPaysage;
